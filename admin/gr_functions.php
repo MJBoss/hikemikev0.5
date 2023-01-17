@@ -14,6 +14,7 @@ $connect = mysqli_connect("localhost", "root", "", "mike");
       $syid = $_POST["sy"];
       $semid = $_POST["sem"];
       $sbjid = $_POST["subject"];
+      //$semid = $_POST["sem"];
       // $sbjid = $_POST["subject"];
 
 
