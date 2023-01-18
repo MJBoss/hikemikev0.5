@@ -47,14 +47,13 @@ if($filename[1] == 'csv'){
       $statement->execute();
       $result = $statement->fetch(PDO::FETCH_ASSOC);
 
-      $itemone = $item1;
-      $itemtwo = $item2;
+     
 
       if(!empty($result)){
         $query = "UPDATE tbl_grades SET prelim = '$item5', midterm = '$item6', prefinal = '$item7', final = '$item8' WHERE s_id = '$item1' AND sbj_id = '$item2'";
       }else{
-      $query = "INSERT into tbl_grades (s_id, sbj_id, sy_id, sem_id, prelim, midterm, prefinal,final) 
-      values('$item1', '$item2', '$item3','$item4','$item5','$item6','$item7','$item8')";
+        $query = "INSERT into tbl_grades (s_id, sbj_id, sy_id, sem_id, prelim, midterm, prefinal,final) 
+        values('$item1', '$item2', '$item3','$item4','$item5','$item6','$item7','$item8')";
         
       }
 

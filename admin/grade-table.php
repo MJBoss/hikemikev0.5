@@ -66,7 +66,7 @@ define("ROW_PER_PAGE",20);
   ON tbl_grades.s_id=tbl_students.s_id
   INNER JOIN tbl_subject
   ON tbl_grades.sbj_id=tbl_subject.sbj_id 
-  WHERE tbl_grades.s_id LIKE :keyword OR tbl_students.s_name LIKE :keyword OR tbl_subject.sbj_code LIKE :keyword ORDER BY tbl_grades.grd_id ASC ';
+  WHERE tbl_grades.s_id LIKE :keyword OR tbl_students.s_name LIKE :keyword OR tbl_subject.sbj_code LIKE :keyword ORDER BY tbl_students.s_name ASC ';
 
   /* Pagination Code starts */
     $per_page_html = '';
