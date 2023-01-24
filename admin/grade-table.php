@@ -54,7 +54,6 @@ define("ROW_PER_PAGE",20);
 
 <?php	
   $search_keyword = '';
-  
     if(!empty($_POST['search']['keyword'])) {
       $search_keyword = $_POST['search']['keyword'];
     }
